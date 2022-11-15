@@ -1,0 +1,19 @@
+<div class="devices">
+    <h2 class="devices__title">Table of devices</h2>
+
+    <p class="devices__empty" *ngIf="isEmpty">table is empty</p>
+    <p class="devices__empty"> {{errorMsg$ | async}} </p>
+
+    <table class="devices__table table" *ngIf="!isEmpty">
+        <tr class="table__header">
+            <th>ID</th>
+            <th>Name</th>
+            <th>Updated at</th>
+        </tr>
+        <tr class="table__row" *ngFor="let item of items">
+            <td class="table__ceil"> {{item.id}} </td>
+            <td class="table__ceil"> {{item.name}} </td>
+            <td class="table__ceil"> {{item.updated_at * 1000 | date : 'dd.MM.yyyy HH:mm'}} </td>
+        </tr>
+    </table>
+</div>
