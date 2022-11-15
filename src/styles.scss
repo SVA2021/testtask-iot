@@ -14,7 +14,7 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-body{
+body {
     background-color: var(--dark);
     color: var(--light);
 }
@@ -35,6 +35,23 @@ p {
 
 ul li {
     list-style: none;
+}
+
+button {
+    display: block;
+    margin: 1rem auto;
+    padding: 1rem;
+    color: var(--dark);
+    background-color: var(--green);
+    text-transform: uppercase;
+    border-radius: 8px;
+    font-weight: 700;
+
+    &:hover {
+        cursor: pointer;
+        font-weight: 700;
+        color: var(--orange);
+    }
 }
 
 /* Responsive Styles */
