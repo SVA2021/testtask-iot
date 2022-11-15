@@ -1,8 +1,23 @@
+.container {
+    min-height: 98vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex: 1 0 auto;
+}
+
 .header {
     margin: 0 auto;
 }
 
-.header__title{
+.header__title {
     margin: 1rem auto;
     text-align: center;
+    font-size: 4rem;
+
+    @media screen and (max-width: 575px) {
+        font-size: 2rem;
+    }
 }
