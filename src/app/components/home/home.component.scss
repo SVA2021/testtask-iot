@@ -1,13 +1,14 @@
 .home {
     margin: 2rem;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     font-size: 5rem;
     text-transform: uppercase;
 }
 
-.error__link {
+.home__link {
     display: block;
     margin: 2rem auto;
     text-decoration: none;
