@@ -16,7 +16,16 @@ export interface AuthResponseI {
 export interface DeviceI {
     id: number
     name: string
-    last_active: number | string
+    updated_at: number
+    // last_active: number | string
+}
+
+export interface DeviceResponseI {
+    data: {
+        metering_devices: {
+            data: DeviceI[]
+        }
+    }
 }
 
 export const URL_LOGIN = 'https://core.nekta.cloud/api/auth/login';
