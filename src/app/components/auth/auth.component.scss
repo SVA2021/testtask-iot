@@ -1,0 +1,40 @@
+.login-form {
+    margin: 0 auto;
+    width: 100%;
+    padding: 1rem;
+    max-width: 600px;
+}
+
+.login-form__title {
+    margin: 1rem auto;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.alert {
+    margin: 1rem auto;
+    color: var(--orange);
+}
+
+.form-control {
+    margin: 1rem auto;
+    padding: 1rem;
+    font-size: 20px;
+
+    label {
+        margin: 1rem;
+    }
+
+    input {
+        margin: 1rem;
+        padding: 0.5rem;
+        width: 100%;
+        border-radius: 8px;
+    }
+}
+
+.validation {
+    margin: 1rem auto;
+    padding: 1rem;
+    color: var(--orange);
+}
