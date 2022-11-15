@@ -7,12 +7,9 @@ export interface AuthI {
 export interface AuthResponseI {
     msg: string
     data: {
-        msg: string
-        data: {
-            access_token: string
-            token_type: "Bearer"
-            expires_at: number
-        }
+        access_token: string
+        token_type: "Bearer"
+        expires_at: number
     }
 }
 
@@ -24,7 +21,7 @@ export interface DeviceI {
 
 export const URL_LOGIN = 'https://core.nekta.cloud/api/auth/login';
 export const URL_DEVICES = 'https://core.nekta.cloud/api/device/metering_devices';
-export const TEST_EMAIL = 'demo@nekta.tech';
+export const TEST_EMAIL = 'demo@nekta.cloud';
 export const TEST_PWD = 'qwertyqwerty';
 export const TEST_REQUEST = {
     "page": 1,
